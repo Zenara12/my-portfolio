@@ -27,6 +27,7 @@
           src="/images/profilepic.jpg"
           :ratio="1"
           spinner-color="secondary"
+          loading="lazy"
           class="border-2 border-info rounded-xl shadow-2"
         />
       </q-avatar>

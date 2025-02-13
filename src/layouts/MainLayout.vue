@@ -2,7 +2,11 @@
   <q-layout view="lHh Lpr lFf">
     <q-header flat class="gt-sm">
       <q-toolbar class="content-between q-pa-lg" flat>
-        <q-toolbar-title>Noli.Dev</q-toolbar-title>
+        <q-toolbar-title>
+          <q-avatar>
+            <q-img :src="noriLogo" :ratio="1" loading="lazy" spinner-color="secondary" />
+          </q-avatar>
+        </q-toolbar-title>
         <q-btn
           v-for="(nav, index) in navS"
           :label="nav.name"
@@ -45,13 +49,10 @@
 <script setup>
 import { ref } from 'vue'
 
+const noriLogo =
+  'https://scontent.fceb3-1.fna.fbcdn.net/v/t39.30808-6/438303044_1001045115355245_3836067379854975523_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGLk88BAJw4gQt7IRftGXNmQWWTJlQRSphBZZMmVBFKmMm6UAQnQVxDDuZQ0qoWUsaBZIn7gJIrvQIln4-3xOll&_nc_ohc=Qc9NH21fTbQQ7kNvgHGEanU&_nc_oc=AdiExFUaf-ugH_Z8FbM0xuhBvBLUQzzpmovJZDsPyw6xeUkmGmJtrQ3O-637KST4yiw&_nc_zt=23&_nc_ht=scontent.fceb3-1.fna&_nc_gid=A4DGDqxEVqsr6dh2a035036&oh=00_AYB7fZexytvga4Cwo08VBNLXJ3UFcIjDLnsabwQjKR3Ubg&oe=67B3D8B1'
 const btnHover = ref(false)
 const navS = [
-  {
-    name: 'Home',
-    to: '',
-    icon: 'house',
-  },
   {
     name: 'About me',
     to: '',

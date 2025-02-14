@@ -138,7 +138,7 @@ const navS = [
 ::-webkit-scrollbar-thumb:hover {
   background: #ffae00c2;
 }
-.q-layout {
+body {
   background: linear-gradient(to right, #0f0f0f, #1a1a2e);
 }
 .q-toolbar {

@@ -26,7 +26,16 @@
         solutions.
       </p>
       <div class="buttons">
-        <q-btn outline color="orange" icon="download" label="Download resume" class="q-mt-sm" />
+        <q-btn
+          outline
+          color="orange"
+          icon="download"
+          label="Download resume"
+          class="q-mt-sm"
+          href="/files/ResumeCV_Noli.Pernes.pdf"
+          target="_blank"
+          download="NoliPernes_Resume.pdf"
+        />
       </div>
     </q-card-section>
   </q-card>

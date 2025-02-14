@@ -1,6 +1,6 @@
 <template>
-  <q-card :class="$q.screen.lt.md ? `${aboutClass} column reverse` : `${aboutClass} `" flat>
-    <q-card-section class="col">
+  <q-card :class="$q.screen.lt.md ? `${aboutClass} column` : `${aboutClass}`" flat>
+    <q-card-section class="col items-evenly justify-evenly">
       <h3 class="text-bold">My Education</h3>
       <q-card class="bg-warning rounded-borders" v-for="(school, index) in education" :key="index">
         <q-card-section class="items-center">
@@ -12,7 +12,8 @@
         </q-card-section>
       </q-card>
     </q-card-section>
-    <q-card-section class="col flex items-end justify-center">
+
+    <q-card-section class="col items-evenly justify-evenly">
       <h3 class="text-bold">More <span class="text-gradient">About Me</span></h3>
       <p class="text-grey-4 text-justify">
         With a background in IT instruction and freelancing, I have developed websites, collaborated

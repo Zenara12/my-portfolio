@@ -91,12 +91,12 @@ export default defineConfig((/* ctx */) => {
       // directives: [],
 
       // Quasar plugins
-      plugins: [],
+      plugins: ['Meta'],
     },
 
     // animations: 'all', // --- includes all animations
     // https://v2.quasar.dev/options/animations
-    animations: [],
+    animations: ['bounceInLeft', 'bounceOutRight'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#sourcefiles
     // sourceFiles: {

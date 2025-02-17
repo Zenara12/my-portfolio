@@ -84,11 +84,6 @@ const experiences = ref([
 </script>
 
 <style scoped>
-.text-gradient {
-  background: linear-gradient(45deg, orange, pink);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .gradient {
   background: linear-gradient(45deg, orange, pink);
 }

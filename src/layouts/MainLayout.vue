@@ -43,7 +43,7 @@
     </q-footer>
 
     <q-page-container>
-      <router-view />
+      <router-view v-model="titleSEO" />
     </q-page-container>
   </q-layout>
 </template>
@@ -52,7 +52,7 @@
 import { ref } from 'vue'
 import { useMeta } from 'quasar'
 
-const titleSEO = 'NoliDev Portfolio'
+const titleSEO = 'NoliDev'
 const descriptionSEO = `Hello I'm Noli a web developer that delivers responsive web apps`
 const tagsSEO =
   'html, css, javascript, php, web, web developer, web development, app development, quasar, vue, seo'
@@ -98,12 +98,12 @@ const navS = [
   {
     name: 'Skills',
     to: '#skills',
-    icon: 'psychology',
+    icon: 'mdi-code-braces-box',
   },
   {
     name: 'Projects',
     to: '#projects',
-    icon: 'description',
+    icon: 'mdi-file-document-multiple-outline',
   },
   {
     name: 'About',
@@ -112,7 +112,7 @@ const navS = [
   },
   {
     name: 'Contact',
-    to: '#',
+    to: '#contact',
     icon: 'contact_phone',
   },
 ]

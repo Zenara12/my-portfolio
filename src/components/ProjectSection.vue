@@ -18,12 +18,12 @@
     </q-tabs>
     <!---->
     <div class="col row flex items-start justify-center">
-      <q-tab-panels v-model="tab" animated>
+      <q-tab-panels v-model="tab" animated class="bg-transparent">
         <q-tab-panel
           v-for="(tabs, index) in tabList"
           :key="index"
           :name="tabs.name"
-          class="bg-warning row"
+          class="bg-transparent row"
         >
           <q-card
             v-for="(project, index) in projectList.filter(
@@ -55,6 +55,14 @@
                 :label="tag"
               />
             </q-card-section>
+            <q-card-actions align="right" :vertical="true">
+              <a
+                class="absolute-bottom-right q-mr-md q-mb-sm text-white"
+                :href="project.link"
+                target="_blank"
+                >{{ project.anchorName }}</a
+              >
+            </q-card-actions>
           </q-card>
         </q-tab-panel>
       </q-tab-panels>
@@ -114,50 +122,12 @@ const showDialog = (value) => {
   showImg.value = true
 }
 
-const projectList = [
-  {
-    name: 'Alon',
-    link: '',
-    tabGroup: 'Mobile',
-    description: `Mental tracker mobile app`,
-    imgPath: 'alon.jpg',
-    tags: ['Quasar', 'VueJS', 'Capacitor', 'AndroidStudio'],
-  },
-  {
-    name: 'BarterDito',
-    link: '',
-    tabGroup: 'Web',
-    description: `A web app that is Specifically for trade/barter of items`,
-    imgPath: 'barterdito.png',
-    tags: ['NuxtJS', 'VueJS', 'Tailwind', 'Node', 'ExpressJS'],
-  },
-  {
-    name: 'Online Alumni Tracer',
-    link: '',
-    tabGroup: 'Web',
-    description: `A website that gathers the were about's and career's of alumni's  `,
-    imgPath: 'alumnitracer.png',
-    tags: ['VueJS', 'Supabase', 'Vuetify'],
-  },
-  {
-    name: 'Genshin Drafting',
-    link: '',
-    tabGroup: 'Web',
-    description: `Drafting System for Genshin Game custom tournaments `,
-    imgPath: 'genshindrafting.png',
-    tags: ['VueJS', 'Supabase', 'CSS'],
-  },
-]
+const projectList = defineModel('projectList')
 </script>
 
 <style scoped>
 .card-size {
   max-width: 20rem;
-}
-.text-gradient {
-  background: linear-gradient(45deg, orange, pink);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .gradient {
   background: linear-gradient(45deg, orange, pink);

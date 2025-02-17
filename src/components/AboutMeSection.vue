@@ -43,7 +43,8 @@ import { useQuasar } from 'quasar'
 
 const $q = useQuasar()
 
-const aboutClass = defineModel()
+const aboutClass = defineModel('aboutClass')
+const projectListSize = defineModel('projectListSize')
 const education = ref([
   {
     name: 'Western Leyte Colloge of Ormoc',
@@ -53,15 +54,7 @@ const education = ref([
 ])
 
 const stats = ref([
-  { value: 4, label: 'Project' },
+  { value: projectListSize.value, label: 'Project' },
   { value: 1, label: 'Years Experience' },
 ])
 </script>
-
-<style scoped>
-.text-gradient {
-  background: linear-gradient(45deg, orange, pink);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-</style>

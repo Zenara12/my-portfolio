@@ -56,7 +56,7 @@ const titleSEO = 'NoliDev Portfolio'
 const descriptionSEO = `Hello I'm Noli a web developer that delivers responsive web apps`
 const tagsSEO =
   'html, css, javascript, php, web, web developer, web development, app development, quasar, vue, seo'
-const imageSEO = window.location.origin + '/images/profilepic.png'
+const imageSEO = 'https://zenara12.github.io/my-portfolio/#/images/profilepic.png'
 // SEO Optimization
 useMeta({
   title: titleSEO,
@@ -102,17 +102,17 @@ const navS = [
   },
   {
     name: 'Projects',
-    to: '',
+    to: '#projects',
     icon: 'description',
   },
   {
-    name: 'About me',
+    name: 'About',
     to: '#about',
     icon: 'person',
   },
   {
     name: 'Contact',
-    to: '',
+    to: '#',
     icon: 'contact_phone',
   },
 ]
@@ -141,9 +141,9 @@ const navS = [
   background: #ffae00c2;
 }
 body {
-  background: linear-gradient(to right, #0f0f0f, #1a1a2e);
+  background: linear-gradient(to right, #0f0f0f, #121238);
 }
 .q-toolbar {
-  background: linear-gradient(to right, #0f0f0f, #1a1a2e);
+  background: linear-gradient(to right, #0f0f0f, #121238);
 }
 </style>

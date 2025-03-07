@@ -56,7 +56,7 @@ const titleSEO = 'NoliDev'
 const descriptionSEO = `Hello I'm Noli a web developer that delivers responsive web apps`
 const tagsSEO =
   'html, css, javascript, php, Noli, Noli Pernes, Pernes, web, web developer, web development, app development, quasar, vue, seo'
-const imageSEO = window.location.origin + '/#/images/profilepic.png'
+const imageSEO = `${window.location.origin}/my-portfolio/images/profilepic.png`
 // SEO Optimization
 useMeta({
   title: titleSEO,
@@ -75,13 +75,15 @@ useMeta({
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
     { property: 'og:type', content: 'website' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: titleSEO },
+    { property: 'og:url', content: `${window.location.origin}` },
+    { property: 'twitter:url', content: `${window.location.origin}` },
+    { property: 'twitter:card', content: 'summary_large_image' },
+    { property: 'twitter:title', content: titleSEO },
     {
-      name: 'twitter:description',
+      property: 'twitter:description',
       content: descriptionSEO,
     },
-    { name: 'twitter:image', content: imageSEO },
+    { property: 'twitter:image', content: imageSEO },
   ],
 })
 

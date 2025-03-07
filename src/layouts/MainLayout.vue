@@ -56,7 +56,7 @@ const titleSEO = 'NoliDev'
 const descriptionSEO = `Hello I'm Noli a web developer that delivers responsive web apps`
 const tagsSEO =
   'html, css, javascript, php, Noli, Noli Pernes, Pernes, web, web developer, web development, app development, quasar, vue, seo'
-const imageSEO = window.location.origin + '/#/images/profilepic.png'
+const imageSEO = `https://bit.ly/noliseopic`
 // SEO Optimization
 useMeta({
   title: titleSEO,

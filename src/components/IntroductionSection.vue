@@ -32,7 +32,7 @@
           icon="download"
           label="Download resume"
           class="q-mt-sm"
-          href="files/ResumeCV_NoliPernes.pdf"
+          href="files/NoliPernesResumeCV.pdf"
           target="_blank"
           download="NoliPernes_ResumeCV.pdf"
         />

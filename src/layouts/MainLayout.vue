@@ -55,8 +55,8 @@ import { useMeta } from 'quasar'
 const titleSEO = 'NoliDev'
 const descriptionSEO = `Hello I'm Noli a web developer that delivers responsive web apps`
 const tagsSEO =
-  'html, css, javascript, php, web, web developer, web development, app development, quasar, vue, seo'
-const imageSEO = 'https://zenara12.github.io/my-portfolio/#/images/profilepic.png'
+  'html, css, javascript, php, Noli, Noli Pernes, Pernes, web, web developer, web development, app development, quasar, vue, seo'
+const imageSEO = window.location.origin + '/#/images/profilepic.png'
 // SEO Optimization
 useMeta({
   title: titleSEO,
